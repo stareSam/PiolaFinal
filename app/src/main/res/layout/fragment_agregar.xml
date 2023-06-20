@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomain"
+    tools:context=".AgregarFragment">
+
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="379dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_input"
+        android:ems="50"
+        android:hint="Nombre"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <EditText
+        android:id="@+id/edtEdicion"
+        android:layout_width="181dp"
+        android:layout_height="45dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Edicion"
+        android:padding="8dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditorial" />
+
+    <EditText
+        android:id="@+id/edtAutor"
+        android:layout_width="379dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="52dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Autor"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombre" />
+
+    <EditText
+        android:id="@+id/edtEditorial"
+        android:layout_width="379dp"
+        android:layout_height="42dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Editorial"
+        android:padding="8dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPrecio"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditorial" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="287dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="448dp"
+        android:backgroundTint="#2BAE66"
+        android:padding="12dp"
+        android:text="Agregar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

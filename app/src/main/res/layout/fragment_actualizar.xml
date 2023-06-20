@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomain"
+    tools:context=".MainActivity">
+
+    <TextView        android:id="@+id/textView"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="31dp"
+        android:text="ID"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spID"
+        android:layout_width="322dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="160dp"
+        android:background="@drawable/spinnertuneado"
+        app:layout_constraintBottom_toTopOf="@+id/edtNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="379dp"
+        android:layout_height="42dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_input"
+        android:ems="50"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.287" />
+
+    <EditText
+        android:id="@+id/edtAutor"
+        android:layout_width="379dp"
+        android:layout_height="42dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Autor"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtEditorial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombre"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <EditText
+        android:id="@+id/edtEdicion"
+        android:layout_width="181dp"
+        android:layout_height="45dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Edicion"
+        android:padding="8dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditorial" />
+
+    <EditText
+        android:id="@+id/edtEditorial"
+        android:layout_width="379dp"
+        android:layout_height="42dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="316dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Editorial"
+        android:padding="8dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnActualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edtPrecio"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditorial" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="274dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="456dp"
+        android:backgroundTint="#2BAE66"
+        android:padding="12dp"
+        android:text="Actualizar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="274dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#2BAE66"
+        android:padding="12dp"
+        android:text="Eliminar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnActualizar"
+        app:layout_constraintVertical_bias="0.238" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

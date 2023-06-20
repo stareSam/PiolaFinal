@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "363663306655",
+    "project_id": "proyecto-piola-e2f64",
+    "storage_bucket": "proyecto-piola-e2f64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363663306655:android:27c410ad57bce62ef197aa",
+        "android_client_info": {
+          "package_name": "com.example.piolafinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363663306655-qcj468qppjb95lnkoq61nfhq3p2uejuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBumps3Pyl9pLq1zDRgCCFVECZ7hidFlHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363663306655-qcj468qppjb95lnkoq61nfhq3p2uejuh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
